@@ -4,14 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "./scripts/dev.sh",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.6.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript-plugin-css-modules": "^4.2.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
@@ -22,6 +23,7 @@
     "eslint": "^8.35.0",
     "eslint-plugin-react": "^7.32.2",
     "prettier": "2.8.4",
+    "typed-css-modules": "^0.7.2",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   }
