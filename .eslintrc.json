@@ -17,7 +17,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "curly": "error",
+    // "curly": "error",
     "lines-between-class-members": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "padding-line-between-statements": [

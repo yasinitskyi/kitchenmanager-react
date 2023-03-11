@@ -9,6 +9,7 @@ specifiers:
   eslint: ^8.35.0
   eslint-config-prettier: ^8.6.0
   eslint-plugin-react: ^7.32.2
+  immer: ^9.0.19
   prettier: 2.8.4
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -19,6 +20,7 @@ specifiers:
 
 dependencies:
   eslint-config-prettier: 8.6.0_eslint@8.35.0
+  immer: 9.0.19
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   typescript-plugin-css-modules: 4.2.2_typescript@4.9.5
@@ -1638,6 +1640,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /immer/9.0.19:
+    resolution: {integrity: sha512-eY+Y0qcsB4TZKwgQzLaE/lqYMlKhv5J9dyd2RhhtGhNo2njPXDqU9XPfcNfa3MIDsdtZt5KlkIsirlo4dHsWdQ==}
+    dev: false
 
   /immutable/4.2.4:
     resolution: {integrity: sha512-WDxL3Hheb1JkRN3sQkyujNlL/xRjAo3rJtaU5xeufUauG66JdMr32bLj4gF+vWl84DIA3Zxw7tiAjneYzRRw+w==}
