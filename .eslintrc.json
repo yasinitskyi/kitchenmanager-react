@@ -25,7 +25,9 @@
       { "blankLine": "always", "prev": ["block-like"], "next": ["*"] },
       { "blankLine": "always", "prev": ["*"], "next": ["block-like"] },
       { "blankLine": "always", "prev": ["class", "function"], "next": ["*"] },
-      { "blankLine": "always", "prev": ["*"], "next": ["class", "function"] }
+      { "blankLine": "always", "prev": ["*"], "next": ["class", "function"] },
+      { "blankLine": "always", "prev": ["if"], "next": ["*"] },
+      { "blankLine": "always", "prev": ["*"], "next": ["if"] }
     ]
   }
 }
