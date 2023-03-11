@@ -1,4 +1,5 @@
 import Immerable from '../Immerable';
+import User from '../User';
 
 export interface KitchenOptions {
   name?: string;
