@@ -1,5 +1,7 @@
 import Immerable from '../Immerable';
 import User from '../User';
+import Recipe from '../Recipe';
+import Ingredient from '../Ingredient';
 
 export interface KitchenOptions {
   name?: string;
@@ -8,24 +10,24 @@ export interface KitchenOptions {
   personal?: boolean;
   ingredients?: Ingredient[];
   recipes?: Recipe[];
-  headChefs?: User[];
+  headChef?: User;
   sousChefs?: User[];
 }
 
 export default class Kitchen extends Immerable {
-  name = '';
+  name: string = '';
 
-  uuid = '';
+  uuid: string = '';
 
   createdAt: Date = new Date();
 
-  personal = true;
+  personal: boolean = true;
 
   ingredients: Ingredient[] = [];
 
   recipes: Recipe[] = [];
 
-  headChefs: User[] = [];
+  headChef: User = new User();
 
   sousChefs: User[] = [];
 
@@ -46,7 +48,7 @@ export default class Kitchen extends Immerable {
 
     if (options.recipes) this.recipes = options.recipes;
 
-    if (options.headChefs) this.headChefs = options.headChefs;
+    if (options.headChef) this.headChef = options.headChef;
 
     if (options.sousChefs) this.sousChefs = options.sousChefs;
   }

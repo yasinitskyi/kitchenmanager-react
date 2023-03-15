@@ -7,9 +7,9 @@ interface UserOptions {
 }
 
 export default class User extends Immerable {
-  username = '';
+  username: string = '';
 
-  email = '';
+  email: string = '';
 
   createdAt: Date = new Date();
 
