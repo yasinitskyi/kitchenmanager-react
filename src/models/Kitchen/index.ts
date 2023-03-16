@@ -7,7 +7,6 @@ export interface KitchenOptions {
   name?: string;
   uuid?: string;
   createdAt?: Date;
-  personal?: boolean;
   ingredients?: Ingredient[];
   recipes?: Recipe[];
   headChef?: User;
@@ -20,8 +19,6 @@ export default class Kitchen extends Immerable {
   uuid: string = '';
 
   createdAt: Date = new Date();
-
-  personal: boolean = true;
 
   ingredients: Ingredient[] = [];
 
@@ -41,8 +38,6 @@ export default class Kitchen extends Immerable {
     if (options.uuid) this.uuid = options.uuid;
 
     if (options.createdAt) this.createdAt = options.createdAt;
-
-    if (options.personal) this.personal = options.personal;
 
     if (options.ingredients) this.ingredients = options.ingredients;
 
